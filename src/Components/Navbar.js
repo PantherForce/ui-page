@@ -7,12 +7,11 @@ import { BiSearchAlt2 } from 'react-icons/bi'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
   return (
-    <div className="max-w-screen overflow-x-hidden font-poppins sm:px-16 px-4">
-      <nav className="bg-[#12406F] fixed  sm:h-[auto] sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-400 sm:px-16 px-4">
+    <div className="w-full overflow-x-hidden font-poppins ">
+      <nav className="bg-[#12406F] fixed  sm:h-[auto] sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-400">
         {/* dektop nav */}
-        <div className="max-w-screen flex  items-center justify-between mx-auto sm:p-4 pb-2 sm:ml-10 md:ml-0">
+        <div className="max-w-screen flex  items-center justify-between mx-auto sm:py-4 pb-2 sm:ml-10 md:ml-0 px-4 sm:px-16">
 
 
           <h2 className="text-xl font-semibold text-white" >LOGO</h2>
@@ -50,7 +49,7 @@ const Navbar = () => {
                 </div>
               </div>
             </ul>
-            <button onClick={() => setOpen(!open)} className="sm:hidden block">
+            <button onClick={() => setOpen(!open)} className="md:hidden block">
               <GiHamburgerMenu size={30} className="mt-2 mr-2 text-white/70" />
             </button>
 
@@ -61,10 +60,10 @@ const Navbar = () => {
         <div className={`${open ? null : "hidden"} h-[23rem]`}>
           <ul>
             <li className="text-white hover:text-blue-400 font-semibold pl-8 cursor-pointer pb-4 pt-6">
-              <addEventListener to="/">Qualifications</addEventListener>
+              <a to="/">Qualifications</a>
             </li>
             <li className="text-white hover:text-blue-400 font-semibold pl-8 cursor-pointer pb-4">
-              <addEventListener to="/about">Organizations</addEventListener>
+              <a to="/about">Organizations</a>
             </li>
             <li className="text-white hover:text-blue-400 font-semibold pl-8 cursor-pointer pb-4">
               <a to="/services">Research & Analysis</a>
