@@ -29,19 +29,18 @@ const UpcomingExamination = () => {
     { date: "02th October 2014", level: "Level 3 (Grad)" },
   ];
   return (
-    <div className="flex  justify-between flex-wrap sm:mx-16 mt-24">
-      <div className="flex">
-      <div className="sm:flex flex-col text-start items-start ml-10 sm:ml-0">
-        <h1 className="upcoming-heading text-blue-800 text-2xl font-semibold">Upcoming<br />Examination</h1>
-        <p>Enquire about the examination &<br /> register for the exam</p>
-      </div>
-        <div className="hidden sm:block border-r border-blue-600 ml-8"> </div>
-
+    <div className="flex  gap-5  md:justify-between flex-wrap sm:px-16 px-4 mt-16 md:mt-20 lg:mt-24">
+      <div className="flex-[0.8] ml-4 border-r border-blue-600 pr-8">
+        <div className="sm:flex flex-col text-start">
+          <h1 className="upcoming-heading text-blue-800 text-2xl font-semibold sm:text-left">Upcoming Examination</h1>
+          <p>Enquire about the examination & register for the exam</p>
         </div>
-      <div className="flex ">
+
+      </div>
+      <div className="flex-1 flex items-start justify-center ">
 
 
-        <div className=" mx-4 sm:mx-0 flex text-start items-start mt-3">
+        <div className=" mx-4 sm:mx-0 flex text-start items-center mt-3">
           {ScheduleSvg()}
           <div className="ml-4 flex flex-col items-start">
             <h1 className="schedule-heading font-semibold text-[#12406F] ">02th October 2014</h1>
@@ -51,7 +50,7 @@ const UpcomingExamination = () => {
 
 
       </div>
-      <div className="flex ">
+      <div className="flex-1 flex items-start justify-center">
 
 
         <div className=" mx-4 flex text-start items-start mt-2">
@@ -67,7 +66,7 @@ const UpcomingExamination = () => {
 
 
       </div>
-      <div className="flex">
+      <div className="flex-1 flex items-start justify-center">
 
 
         <div className=" mx-4 flex text-start items-start mt-2">

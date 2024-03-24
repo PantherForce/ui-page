@@ -12,17 +12,17 @@ export function Accr() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="pt-24 sm:px-16 px-4">
+    <div className="mt-16 md:mt-20 lg:mt-24 sm:px-16 px-4">
       <div className="text-center">
         <p className="text-xl text-[#12406F] font-semibold">FAQ</p>
       </div>
       <Accordion open={open === 1} >
         <AccordionHeader
           onClick={() => handleOpen(1)}
-          className={`font-medium flex justify-between items-center text-[18px] ${open === 1 ? 'text-[#12406F]' : 'text-[#525252]'}`}
+          className={`flex justify-between items-center ${open === 1 ? 'text-[#12406F]' : 'text-[#525252]'}`}
         >
-          <p className="flex-1">How does an investor gain access to MF Utility?</p>
-          <div className="flex items-center ml-2"> 
+          <p className="flex-1 text-base sm:text-lg">How does an investor gain access to MF Utility?</p>
+          <div className="flex items-center ml-2">
             {open === 1 ? <AiFillMinusCircle /> : <AiFillPlusCircle />}
           </div>
         </AccordionHeader>
@@ -38,8 +38,8 @@ export function Accr() {
           className={`font-medium text-[18px] ${open === 2 ? 'text-[#12406F]' : 'text-[#525252]'
             }`}
         >
-           <p className="flex-1">Will investors be able to have multiple Common Account Numbers?</p>
-          <div className="flex items-center ml-2"> 
+          <p className="flex-1 text-base sm:text-lg">Will investors be able to have multiple Common Account Numbers?</p>
+          <div className="flex items-center ml-2">
             {open === 2 ? <AiFillMinusCircle /> : <AiFillPlusCircle />}
           </div>
         </AccordionHeader>
@@ -50,11 +50,11 @@ export function Accr() {
       <Accordion open={open === 3} >
         <AccordionHeader
           onClick={() => handleOpen(3)}
-          className={`font-medium text-[18px] ${open === 3 ? 'text-[#12406F]' : 'text-[#525252]'
+          className={`${open === 3 ? 'text-[#12406F]' : 'text-[#525252]'
             }`}
         >
-           <p className="flex-1">How does an investor gain access to MF Utility?</p>
-          <div className="flex items-center ml-2"> 
+          <p className="flex-1 text-base sm:text-lg">How does an investor gain access to MF Utility?</p>
+          <div className="flex items-center ml-2">
             {open === 3 ? <AiFillMinusCircle /> : <AiFillPlusCircle />}
           </div>
         </AccordionHeader>

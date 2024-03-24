@@ -9,17 +9,17 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
-    <div className="max-w-screen overflow-x-hidden font-poppins ">
-      <nav className="bg-[#12406F] fixed px-2   sm:h-[auto] sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-400">
+    <div className="max-w-screen overflow-x-hidden font-poppins sm:px-16 px-4">
+      <nav className="bg-[#12406F] fixed  sm:h-[auto] sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-400 sm:px-16 px-4">
         {/* dektop nav */}
-        <div className="max-w-screen-xl flex  items-center justify-between mx-auto sm:p-4 pb-2 sm:ml-10 md:ml-0">
+        <div className="max-w-screen flex  items-center justify-between mx-auto sm:p-4 pb-2 sm:ml-10 md:ml-0">
 
 
           <h2 className="text-xl font-semibold text-white" >LOGO</h2>
 
 
           <div className="flex">
-            <ul className="sm:flex  hidden ">
+            <ul className="md:flex  hidden ">
 
               <li className="p-2 mr-2 text-white hover:text-blue-400 cursor-pointer flex justify-center">
                 <a to="/">Qualifications</a>
@@ -44,9 +44,9 @@ const Navbar = () => {
               </li>
 
               <div className="flex items-center space-x-2">
-                <BiSearchAlt2 className="h-6 w-6 text-white" />
-                <div className="bg-white rounded">
-                  <button className="text-[#12406F] py-2 px-3 md:px-2">Enrolment</button>
+                <BiSearchAlt2 className="h-6 w-6 text-white mr-2" />
+                <div className="bg-white rounded-xl">
+                  <button className="text-[#12406F] py-2 px-3 md:px-4">Enrolment</button>
                 </div>
               </div>
             </ul>
