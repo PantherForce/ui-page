@@ -5,11 +5,11 @@ import { BsPlay as FiPlay } from 'react-icons/bs';
 const Header = () => {
     return (
         <div className='pt-[73px] bg-[#F6F6F6] sm:pl-16 pl-4'>
-            <div className='container ml-auto'>
+            <div>
                 <div className='flex flex-col-reverse sm:flex-row items-center justify-between'>
-                    <div className='sm:w-[30%] w-[100%] p-4'>
-                        <p className='text-xl font-semibold my-3 text-[#12406F] text-center sm:text-left'>Lorem Ipsum</p>
-                        <p className='text-center sm:text-left text-sm sm:text-base'>
+                    <div className='sm:w-[30%] w-[100%] p-4 flex flex-col items-center sm:items-start'>
+                        <p className='text-xl font-semibold my-3 text-[#12406F]'>Lorem Ipsum</p>
+                        <p className='sm:text-left text-sm sm:text-base'>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque fugiat earum dignissimos ex fuga velit aspernatur sapiente architecto neque, eius quos tempore dicta accusamus possimus error id iusto voluptate.
                         </p>
                         <button className='my-4 bg-[#12406F] text-white px-3 py-2 rounded-md flex'>

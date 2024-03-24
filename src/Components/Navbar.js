@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
           <div className="flex">
-            <ul className="sm:flex  hidden ">
+            <ul className="md:flex  hidden ">
 
               <li className="p-2 mr-2 text-white hover:text-blue-400 cursor-pointer flex justify-center">
                 <a to="/">Qualifications</a>
